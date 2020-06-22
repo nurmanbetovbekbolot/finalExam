@@ -15,7 +15,8 @@ public class ResourceController {
 
     @GetMapping(value = "/{id}")
     public String getById(@PathVariable("id")Long id) {
-        return null;
+       String res=FileEditor.getCount();
+       return res;
     }
 
     @PostMapping
